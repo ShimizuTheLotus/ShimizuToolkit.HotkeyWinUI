@@ -28,7 +28,7 @@ Parameters:
 We use hotkey LShift + LWin + D as an example
 
 | key input | `true` behavior | `false` behavior |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | LShift + LWin + D | trigger | trigger |
 | LShift + RWin + D | trigger | none |
 | RShift + LWin + D | trigger | none |

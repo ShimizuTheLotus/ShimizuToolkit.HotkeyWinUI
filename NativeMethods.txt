@@ -1,0 +1,7 @@
+﻿Windows.Win32.Foundation
+GetWindowText
+SetWindowText
+GetWindowLongPtrW
+SetWindowLongPtrW
+GetWindowLongW
+SetWindowLongW

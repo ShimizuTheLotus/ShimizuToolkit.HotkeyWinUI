@@ -4,7 +4,7 @@ A easy way to manage global hotkeys (keyboard accelerators) in WinUI.
 
 ## Why ShimizuToolkit.HotkeyWinUI?
 
-- It could work on different CPU, x86, x64 and maybe AMD64.
+- It could work on different CPU, x86, x64 and AMD64 CPU, designed for WinUI platform.
 - It could distinguish left and right modifiers, which can give you more choices on hotkeys.
 
 ## Usage

@@ -9,6 +9,7 @@ A easy way to manage global hotkeys (keyboard accelerators) in WinUI.
 
 ## Usage
 
+### Define hotkey
 ```csharp
 // Define hotkey
 HotKeyInfo hotKeyInfo = new("OpenWindow", OpenWindow, new List<VirtualKey>(){ VirtualKey.VK_LSHIFT, VirtualKey.VK_LCONTROL, VirtualKey.VK_P}, true);
@@ -38,6 +39,7 @@ We use hotkey LShift + LWin + D as an example
 
 `false` can enable specific detect for L/R modifier keys.`
 
+### Register or overwrite a hotkey
 ```csharp
 // Register or overwrite a hotkey
 ShimizuToolkit.HotkeyWinUI.HotKeyManager.Current.AddOrOverwriteHotKey("OpenWindow", hotKeyInfo);
@@ -45,12 +47,13 @@ ShimizuToolkit.HotkeyWinUI.HotKeyManager.Current.AddOrOverwriteHotKey(hotKeyInfo
 ```
 "OpenWindow" is the identifier we just used. If you've already set an identifier you want to use, you can choose the second function. If there's an hotkey registered with a same identifier, it will be replaced.
 
+### Enable or disable hotkeys
 ```csharp
 // Disable or enable hotkeys
 hotKeyInfo.IsEnabled = true;
 hotKeyInfo.IsEnabled = false;
 ```
-
+### Unregister a hotkey
 ```csharp
 // Unregister a hotkey
 ShimizuToolkit.HotkeyWinUI.HotKeyManager.Current.RemoveHotKey("OpenWindow");
